@@ -1,0 +1,21 @@
+spring:
+  cache:
+    redis:
+      cache-null-values: true
+      time-to-live: 40000
+    type: redis
+  data:
+    redis:
+      host: localhost
+      port: 6379
+  datasource:
+    password: S@ur@v#0907
+    url: jdbc:sqlserver://spring-redis.database.windows.net:1433;database=springredisdb;
+    username: saurav
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.SQLServerDialect
+        format_sql: true
